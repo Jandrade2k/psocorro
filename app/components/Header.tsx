@@ -1,8 +1,12 @@
 import "./Header.scss";
 
-const Header: React.FC = () => {
+type HeaderProps = {
+  theme?: "bordo" | "branco";
+}
+
+const Header: React.FC<HeaderProps> = ({ theme = "bordo" }) => {
   return (
-    <header>
+    <header className={`header header--${theme}`}>
       <div className="logo">
         <img src="logo.png" alt="Logo Ponto Socorro" />
       </div>

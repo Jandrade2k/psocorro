@@ -7,26 +7,29 @@ import cr2 from "../assets/cr_2.png";
 import cr3 from "../assets/cr_3.png";
 
 import ClockIcon from "../assets/relogio-ponto.svg";
+import Footer from "~/components/Footer";
 
 const Home: React.FC = () => {
-  const imgs = [cr1, cr2, cr3];
-  const [index, setIndex] = useState(0);
-  const [imgWidth, setImgWidth] = useState(0);
+  // const imgs = [cr1, cr2, cr3];
+  // const [index, setIndex] = useState(0);
+  // const [imgWidth, setImgWidth] = useState(0);
 
-  useEffect(() => {
-    const updateWidth = () => setImgWidth(window.innerWidth * 0.992);
-    updateWidth();
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
+  // useEffect(() => {
+  //   const updateWidth = () => setImgWidth(window.innerWidth * 0.992);
+  //   updateWidth();
+  //   window.addEventListener("resize", updateWidth);
+  //   return () => window.removeEventListener("resize", updateWidth);
+  // }, []);
 
-  const prev = () => setIndex((i) => (i === 0 ? imgs.length - 1 : i - 1));
-  const next = () => setIndex((i) => (i === imgs.length - 1 ? 0 : i + 1));
+  // const prev = () => setIndex((i) => (i === 0 ? imgs.length - 1 : i - 1));
+  // const next = () => setIndex((i) => (i === imgs.length - 1 ? 0 : i + 1));
 
   return (
     <div>
       <Header />
-      <div className="carrosel-wrapper" style={{ position: "relative", width: imgWidth, margin: "0 auto" }}>
+      <p>conteudo Home</p>
+      <Footer />
+      {/* <div className="carrosel-wrapper" style={{ position: "relative", width: imgWidth, margin: "0 auto" }}>
         <button className="carrosel-arrow left" onClick={prev} aria-label="Anterior">
           &#8249;
         </button>
@@ -74,7 +77,7 @@ const Home: React.FC = () => {
         </div>
         <div className="card"></div>
         <div className="card"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

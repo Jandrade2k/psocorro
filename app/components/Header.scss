@@ -1,101 +1,243 @@
+// @use "../variables.scss" as *;
+// body {
+//     margin: 0;
+//     font-family: Arial, sans-serif;
+//     background-color: $cinza-claro;
+//     height: 100vh;
+// }
+
+// header {
+//     background-color: white;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-bottom: 2px solid white;
+//     height: 100px;
+//     margin: 0;
+//     // border: $debug;
+
+//     &--branco {
+//         background-color: $bordo;
+//         border-bottom: 2px solid $bordo;
+//     }
+// }
+
+// .logo {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: start;
+//     justify-content: center;
+//     background-color: $bordo;
+//     margin: 0;
+//     padding-top: 10px;
+//     padding-left: 20px; 
+//     width: 25%;
+//     height: 100%;
+//     // border: $debug;
+
+//     &--branco {
+//         background-color: white;
+//     }
+//     img{
+//         // max-height: 80%;
+//         max-width: 50%;
+//         background-color: #900020; //retirar com a imagem certa da logo
+//         // border: $debug;
+//     }
+// }
+
+// nav {
+//     display: flex;
+//     gap: 30px;
+
+//     &:hover {
+//         a:first-child {
+//             border: none;
+//             color: black;
+//         }
+//     }
+//     a {
+//         text-decoration: none;
+//         color: black;
+//         font-weight: bold;
+//         font-size: 1.2em;
+//         border-bottom: 2px solid transparent;
+
+//         &:hover {
+//             color: $bordo;
+//             cursor: pointer;
+//             border-bottom: 2px solid $bordo;
+//         }
+//     }
+
+//     a:first-child {
+//         color: $bordo;
+//         border-bottom: 2px solid $bordo;
+
+//         &:hover {
+//             border-bottom: 2px solid $bordo;
+//             color: $bordo;
+//         }
+
+//     }
+// }
+
+// .orcamento {
+//     padding: 0 30px;
+
+//     button {
+//         background-color: $bordo;
+//         color: white;
+//         border: none;
+//         padding: 10px 20px;
+//         border-radius: 5px;
+//         cursor: pointer;
+//         font-size: 1em;
+//         font-weight: bold;
+//     }
+// }
+
 @use "../variables.scss" as *;
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: $cinza-claro;
     height: 100vh;
+
+    img{
+        max-width: 50%;
+        background-color: #900020; //retirar com a imagem certa da logo
+    }
+
+    nav {
+        display: flex;
+        gap: 30px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 0;
+        padding-top: 10px;
+        padding: 20px; 
+        width: 25%;
+        height: 100%;
+    }
 }
 
-header {
-    background-color: white;
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // border-bottom: 2px solid white;
     height: 100px;
     margin: 0;
-    position: relative;
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 1px;
-        background: white;
-        z-index: 2;
-        pointer-events: none;
-    }
-    // border: $debug;
-}
+    &--bordo {
+        background-color: white;
+        border-bottom: 2px solid white;
 
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    justify-content: center;
-    background-color: $bordo;
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 20px;
-    width: 25%;
-    height: 1300px;
-    // border: $debug;
-    img{
-        // max-height: 80%;
-        max-width: 50%;;
-        // border: $debug;
-    }
-}
+        .logo {
+            background-color: $bordo;
+        }
 
-nav {
-    display: flex;
-    gap: 30px;
+        nav {
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 1.2em;
+                border-bottom: 2px solid transparent;
 
-    &:hover {
-        a:first-child {
+                &:hover {
+                    a:first-child {
+                        border: none;
+                        color: black;
+                    }
+                    color: $bordo;
+                    cursor: pointer;
+                    border-bottom: 2px solid $bordo;
+                }
+            }
+
+            a:first-child {
+                color: $bordo;
+                border-bottom: 2px solid $bordo;
+                &:hover {
+                    border-bottom: 2px solid $bordo;
+                    color: $bordo;
+                }
+            }
+        }
+
+        .orcamento {
+            padding: 10px 30px;
+
+        button {
+            background-color: $bordo;
+            color: white;
             border: none;
-            color: black;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 1.2em;
-        border-bottom: 2px solid transparent;
-
-        &:hover {
-            color: $bordo;
+            padding: 10px 20px;
+            border-radius: 5px;
             cursor: pointer;
-            border-bottom: 2px solid $bordo;
+            font-size: 1em;
+            font-weight: bold;
         }
     }
+    }
 
-    a:first-child {
-        color: $bordo;
+    &--branco {
+        background-color: $bordo;
         border-bottom: 2px solid $bordo;
 
-        &:hover {
-            border-bottom: 2px solid $bordo;
-            color: $bordo;
+        .logo {
+            img{
+                background-color: $cinza-claro
+            }
+            background-color: white;
         }
 
-    }
-}
+        nav {
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                border-bottom: 2px solid transparent;
 
-.orcamento {
-    padding: 0 30px;
+                &:hover {
+                    color: white;
+                    cursor: pointer;
+                    border-bottom: 2px solid white;
+                }
+            }
 
-    button {
-        background-color: $bordo;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1em;
-        font-weight: bold;
+            a:first-child {
+                color: white;
+                border-bottom: 2px solid white;
+
+                &:hover {
+                    border-bottom: 2px solid white;
+                    color: white;
+                }
+            }
+        }
+
+        .orcamento {
+            padding: 10px 30px;
+
+            button {
+                background-color: white;
+                color: $bordo;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
     }
 }
