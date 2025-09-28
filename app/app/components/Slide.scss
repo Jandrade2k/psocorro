@@ -1,0 +1,61 @@
+@use '../variables.scss' as *;
+
+div.slide {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: $bordo;
+
+    .slide-image {
+        width: 60%;
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            border-radius: 10px;
+        }
+    }
+
+    .slide-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            color: white;
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        p {
+            color: $cinza-claro;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: white;
+            color: $bordo;
+            border: 1px solid transparent;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            align-self: center;
+            margin-top: 10px;
+
+            &:hover {
+                background-color: $bordo-claro; //trocar para $bordo.
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+}

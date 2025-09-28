@@ -1,0 +1,29 @@
+@use "../variables.scss" as *;
+
+.content-section {
+    padding: 40px;
+    text-align: center;
+    background-color: $cinza-claro;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        color: $bordo;
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    p {
+        color: $cinza-escuro;
+        font-size: 1.2em;
+    }
+
+    .cards {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+    }
+}
