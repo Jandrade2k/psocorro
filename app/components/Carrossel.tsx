@@ -14,7 +14,7 @@ const Carrossel: React.FC = () => {
         loop={true}>
       <SwiperSlide >
         <Slide 
-        imgSrc="app/assets/sld_1.jpg"
+        imgSrc="/assets/sld_1.jpg"
         title="Relogios de Ponto"
         description="Conheça nossa linha completa de relógios de ponto, ideais para empresas de todos os tamanhos."
         buttonText="Saiba mais"
@@ -22,7 +22,7 @@ const Carrossel: React.FC = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Slide 
-        imgSrc="app/assets/sld_2.jpg"
+        imgSrc="/assets/sld_2.jpg"
         title="Controles de Acesso"
         description="Soluções avançadas para controle de acesso, garantindo segurança e eficiência para sua empresa."
         buttonText="Saiba mais"
@@ -30,7 +30,7 @@ const Carrossel: React.FC = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Slide 
-        imgSrc="app/assets/sld_3.jpg"
+        imgSrc="/assets/sld_3.jpg"
         title="Soluções em Ponto"
         description="Descubra nossas soluções em ponto, projetadas para otimizar a gestão de sua empresa."
         buttonText="Saiba mais"
@@ -38,7 +38,7 @@ const Carrossel: React.FC = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Slide 
-        imgSrc="app/assets/sld_4.jpg"
+        imgSrc="/assets/sld_4.jpg"
         title="Sistemas de Ponto"
         description="Soluções completas para gestão de ponto, adaptáveis a qualquer tipo de empresa."
         buttonText="Saiba mais"
@@ -47,5 +47,6 @@ const Carrossel: React.FC = () => {
     </Swiper>
     )
 }
+
 
 export default Carrossel
