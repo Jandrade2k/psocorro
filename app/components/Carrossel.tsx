@@ -9,7 +9,7 @@ const Carrossel: React.FC = () => {
         <Swiper
         spaceBetween={20} 
         slidesPerView={1} 
-        autoplay={{ delay: 3500, disableOnInteraction: false }}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
         modules={[Autoplay]}
         loop={true}>
       <SwiperSlide >

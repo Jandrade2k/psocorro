@@ -41,6 +41,7 @@ const Footer: React.FC = () => {
           <li><a href="">Suporte</a></li>
           <li><a href="">FAQ</a></li>
         </ul>
+        <iframe allowTransparency={true} width="80" scrolling="no" frameBorder="0" src="https://revenda.secullum.com.br/selo-oficial/7368"></iframe>
       </div>
       <div className='contato'>
         <h4>
