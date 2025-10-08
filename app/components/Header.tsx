@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./Header.scss";
 
 type HeaderProps = {
@@ -12,11 +13,22 @@ const Header: React.FC<HeaderProps> = ({ theme = "bordo" }) => {
       </div>
       <div className="menu">
         <nav>
-          <a>Home</a>
-          <a>Soluçoes</a> {/* Corrigido o erro de digitação */}
-          <a>Quem somos</a>
-          <a>Suporte</a>
-          <a>Contato</a>
+         <ul>
+      <li><Link to="/">Home</Link></li>
+
+      <li className="dropdown">
+        <Link to="/produtos">Soluções ▾</Link>
+        <ul className="dropdown-menu">
+          <li><Link to="/produtos/controle-acesso">Controle de Acesso</Link></li>
+          <li><Link to="/produtos/relogio-ponto">Relógio de Ponto</Link></li>
+          <li><Link to="/produtos/sistemas">Sistemas</Link></li>
+        </ul>
+      </li>
+
+      <li><Link to="/sobre">Quem somos</Link></li>
+      <li><Link to="/suporte">Suporte</Link></li>
+      <li><Link to="/contato">Contato</Link></li>
+    </ul>
         </nav>
       </div>
       <div className="orcamento">

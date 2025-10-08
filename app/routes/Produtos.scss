@@ -1,0 +1,29 @@
+@use '../variables';
+
+div {
+    border: 1px solid red;
+}
+
+.produtos-container {
+    display: flex;
+    gap: 20px;
+    height: auto;
+}
+
+.filtro {
+    width: 30%;
+
+}
+
+.produtos-list {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+
+    .item-card {
+        width: calc(33% - 10px); // 3 cards por linha com espaçamento de 20px
+        max-height: 300px;
+    }
+}

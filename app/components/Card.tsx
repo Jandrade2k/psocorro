@@ -1,7 +1,17 @@
-const Card: React.FC<{ title: string; description: string; imageUrl: string }> = ({ title, description, imageUrl }) => {
+import type { ReactNode } from "react";
+
+import "./Card.scss";
+
+type CardProps = {
+    title: string;
+    description: string;
+    icon?: ReactNode;
+}
+
+const Card: React.FC<CardProps> = ({ title, description, icon }) => {
     return (
         <div className="card">
-            <img src={imageUrl} alt={title} />
+            {icon && <div className="icon">{icon}</div>}
             <h3>{title}</h3>
             <p>{description}</p>
         </div>

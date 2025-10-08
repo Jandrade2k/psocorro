@@ -1,0 +1,47 @@
+@use '../variables' as *;
+
+.item-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    transition: transform 1s ease;
+    cursor: pointer;
+
+    img {
+        border-radius: 4px;
+        height: 50%;
+        max-height: 200px;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: $bordo;
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.8rem;
+        padding: 10px;
+        color: $cinza-medio;
+        display: -webkit-box;
+        -webkit-line-clamp: 7; /* número de linhas visíveis */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
