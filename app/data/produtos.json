@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nome": "REP ID Class Bio prox - (671/1510)",
+        "descricao": "Solução moderna para controle de jornada.",
+        "marca": "Control ID",
+        "img": "/assets/produtos/id_class.jpg"
+    },
+    {
+        "id": 2,
+        "nome": "REP ID Class facial - 671",
+        "descricao": "Controle de acesso com reconhecimento facial.",
+        "marca": "Control ID",
+        "img": "/assets/produtos/id_class_facial.jpg"
+    },
+    {
+        "id": 3,
+        "nome": "ID Face",
+        "descricao": "Solução moderna para controle de acesso.",
+        "marca": "Control ID",
+        "img": "/assets/produtos/id_face.jpg"
+    },
+    {
+        "id": 4,
+        "nome": "ID Face Max",
+        "descricao": "Solução moderna para controle de acesso.",
+        "marca": "Control ID",
+        "img": "/assets/produtos/id_face_max.jpg"
+    },
+    {
+        "id": 5,
+        "nome": "REP Prisma Super Facil Advanced - (671/1510)",
+        "descricao": "Solução moderna para controle de jornada.",
+        "marca": "Henry",
+        "img": "/assets/produtos/prisma_adv.jpg"
+    },
+    {
+        "id": 6,
+        "nome": "Evo AI Face 40",
+        "descricao": "Solução moderna para controle de acesso.",
+        "marca": "Evo",
+        "img": "/assets/produtos/evo_ai_face_40.jpg"
+    },
+    {
+        "id": 7,
+        "nome": "REP Hexa Advanced",
+        "descricao": "Solução moderna para controle de jornada.",
+        "marca": "Henry",
+        "img": "/assets/produtos/hexa_adv.png"
+    },
+    {
+        "id": 8,
+        "nome": "REP Blue - (671/1510)",
+        "descricao": "Solução moderna para controle de jornada.",
+        "marca": "RW Tech",
+        "img": "/assets/produtos/blue.jpg"
+    },
+    {
+        "id": 9,
+        "nome": "Cartográfico Vega",
+        "descricao": "Solução moderna para controle de jornada.",
+        "marca": "Henry",
+        "img": "/assets/produtos/vega.jpg"
+    }
+]

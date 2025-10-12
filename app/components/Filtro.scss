@@ -1,0 +1,10 @@
+@use '../variables' as *;
+
+.filtro-container {
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
