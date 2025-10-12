@@ -7,4 +7,72 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h2 {
+        color: $cinza-escuro;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .marca-select {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        label {
+            font-weight: bold;
+            color: $bordo;
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+
+            option {
+                font-size: 16px;
+                color: $cinza-escuro;
+                background-color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    background-color: $cinza-claro;
+                }
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        label {
+            font-weight: bold;
+            color: $bordo;
+        }
+
+
+        button {
+            background-color: $bordo;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($bordo, 10%);
+            }
+        }
+    }
 }
