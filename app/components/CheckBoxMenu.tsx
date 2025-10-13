@@ -6,14 +6,15 @@ type Option = {
     value: string;
 };
 
-type CheckboxGroupProps = {
+type CheckBoxMenuProps = {
     label?: string;
     options: Option[];
     onChange?: (selected: string[]) => void;
+    value?: string[];
 };
 
-function CheckboxGroup({ label, options, onChange }: CheckboxGroupProps) {
-    const [selected, setSelected] = useState<string[]>([]);
+function CheckBoxMenu({ label, options, onChange, value }: CheckBoxMenuProps) {
+    const [selected, setSelected] = useState<string[]>(value || []);
 
     const handleChange = (value: string) => {
         const newSelected = selected.includes(value)
@@ -21,6 +22,7 @@ function CheckboxGroup({ label, options, onChange }: CheckboxGroupProps) {
             : [...selected, value];
         setSelected(newSelected);
         onChange?.(newSelected);
+        console.log(newSelected);
     };
 
     const clearAll = () => {
@@ -36,9 +38,11 @@ function CheckboxGroup({ label, options, onChange }: CheckboxGroupProps) {
                 {options.map((opt) => (
                     <label key={opt.value} className="checkbox-item">
                         <input
+                            id={opt.value}
                             type="checkbox"
                             checked={selected.includes(opt.value)}
                             onChange={() => handleChange(opt.value)}
+                            value={opt.value}
                         />
                         <span>{opt.label}</span>
                     </label>
@@ -53,4 +57,4 @@ function CheckboxGroup({ label, options, onChange }: CheckboxGroupProps) {
         </div>
     );
 }
-export default CheckboxGroup;
+export default CheckBoxMenu;
