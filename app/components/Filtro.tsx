@@ -27,6 +27,7 @@ const funcoes = [
 const Filtro: React.FC<FiltroProps> = ({ onChange }) => {
   const [selectedMarca, setSelectedMarca] = useState<string>(''); // estado do select
   const [selectedFuncoes, setSelectedFuncoes] = useState<string[]>([]); // estado dos checkboxes
+  
 
   // Atualiza os filtros combinados
   const updateFilters = (marca: string, funcoes: string[]) => {

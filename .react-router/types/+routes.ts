@@ -13,17 +13,10 @@ type Pages = {
   "/": {
     params: {};
   };
-  "/produtos": {
-    params: {};
-  };
-  "/produtos/controle-acesso": {
-    params: {};
-  };
-  "/produtos/relogio-ponto": {
-    params: {};
-  };
-  "/produtos/sistemas": {
-    params: {};
+  "/produtos/:categoria": {
+    params: {
+      "categoria": string;
+    };
   };
   "/contato": {
     params: {};
@@ -39,7 +32,7 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/produtos" | "/produtos/controle-acesso" | "/produtos/relogio-ponto" | "/produtos/sistemas" | "/contato" | "/sobre" | "/suporte";
+    page: "/" | "/produtos/:categoria" | "/contato" | "/sobre" | "/suporte";
   };
   "routes/Home.tsx": {
     id: "routes/Home";
@@ -47,19 +40,7 @@ type RouteFiles = {
   };
   "routes/Produtos.tsx": {
     id: "routes/Produtos";
-    page: "/produtos" | "/produtos/controle-acesso" | "/produtos/relogio-ponto" | "/produtos/sistemas";
-  };
-  "routes/produtos/ControleAcesso.tsx": {
-    id: "routes/produtos/ControleAcesso";
-    page: "/produtos/controle-acesso";
-  };
-  "routes/produtos/RelogioPonto.tsx": {
-    id: "routes/produtos/RelogioPonto";
-    page: "/produtos/relogio-ponto";
-  };
-  "routes/produtos/Sistemas.tsx": {
-    id: "routes/produtos/Sistemas";
-    page: "/produtos/sistemas";
+    page: "/produtos/:categoria";
   };
   "routes/Contato.tsx": {
     id: "routes/Contato";

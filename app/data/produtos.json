@@ -5,7 +5,7 @@
         "descricao": "Solução moderna para controle de jornada.",
         "marca": "Control ID",
         "img": "/assets/produtos/id_class.jpg",
-        "categoria": "ponto",
+        "categoria": "relogio-ponto",
         "funcoes": ["biometria", "cartao_proximidade", "senha"]
     },
     {
@@ -14,7 +14,7 @@
         "descricao": "Controle de acesso com reconhecimento facial.",
         "marca": "Control ID",
         "img": "/assets/produtos/id_class_facial.jpg",
-        "categoria": "ponto",
+        "categoria": "relogio-ponto",
         "funcoes": ["facial", "cartao_proximidade", "senha"]
     },
     {
@@ -23,7 +23,7 @@
         "descricao": "Solução moderna para controle de acesso.",
         "marca": "Control ID",
         "img": "/assets/produtos/id_face.jpg",
-        "categoria": "acesso",
+        "categoria": "controle-acesso",
         "funcoes": ["facial", "cartao_proximidade", "senha"]
     },
     {
@@ -32,7 +32,7 @@
         "descricao": "Solução moderna para controle de acesso.",
         "marca": "Control ID",
         "img": "/assets/produtos/id_face_max.jpg",
-        "categoria": "acesso",
+        "categoria": "controle-acesso",
         "funcoes": ["facial", "cartao_proximidade", "senha"]
     },
     {
@@ -41,7 +41,7 @@
         "descricao": "Solução moderna para controle de jornada.",
         "marca": "Henry",
         "img": "/assets/produtos/prisma_adv.jpg",
-        "categoria": "ponto",
+        "categoria": "controle-acesso",
         "funcoes": ["biometria", "cartao_proximidade", "senha"]
     },
     {
@@ -50,7 +50,7 @@
         "descricao": "Solução moderna para controle de acesso.",
         "marca": "Evo",
         "img": "/assets/produtos/evo_ai_face_40.jpg",
-        "categoria": "acesso",
+        "categoria": "controle-acesso",
         "funcoes": ["facial", "cartao_proximidade", "senha"]
     },
     {
@@ -59,7 +59,7 @@
         "descricao": "Solução moderna para controle de jornada.",
         "marca": "Henry",
         "img": "/assets/produtos/hexa_adv.png",
-        "categoria": "ponto",
+        "categoria": "relogio-ponto",
         "funcoes": ["biometria", "cartao_proximidade", "senha"]
     },
     {
@@ -68,7 +68,7 @@
         "descricao": "Solução moderna para controle de jornada.",
         "marca": "RW Tech",
         "img": "/assets/produtos/blue.jpg",
-        "categoria": "ponto",
+        "categoria": "relogio-ponto",
         "funcoes": ["biometria", "cartao_proximidade", "senha"]
     },
     {
@@ -77,7 +77,7 @@
         "descricao": "Solução moderna para controle de jornada.",
         "marca": "Henry",
         "img": "/assets/produtos/vega.jpg",
-        "categoria": "ponto",
+        "categoria": "relogio-ponto",
         "funcoes": ["cartografico"]
     }
 ]
