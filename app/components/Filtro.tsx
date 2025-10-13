@@ -4,7 +4,7 @@ import CheckBoxMenu from './CheckBoxMenu';
 import { useState } from 'react';
 
 type FiltroProps = {
-  onChange?: (filtros: string[]) => void;
+  onChange?: (filtros: { marca: string; funcoes: string[] }) => void;
 };
 
 const options = [
@@ -30,10 +30,7 @@ const Filtro: React.FC<FiltroProps> = ({ onChange }) => {
 
   // Atualiza os filtros combinados
   const updateFilters = (marca: string, funcoes: string[]) => {
-    const filtros: string[] = [];
-    if (marca && marca !== '') filtros.push(marca);
-    filtros.push(...funcoes);
-    onChange?.(filtros);
+    onChange?.({ marca, funcoes });
   };
 
   const handleSelectChange = (value: string) => {
