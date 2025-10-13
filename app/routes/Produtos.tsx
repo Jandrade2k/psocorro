@@ -30,7 +30,7 @@ const Produtos: React.FC = () => {
     console.log('Tela de produtos inicializada.');
     console.log('Categoria da URL:', categoria);
 
-    if (categoria) {
+    if (categoria && categoria !== 'a') {
       setFiltrosCategoria(categoria);
     } else {
       setFiltrosCategoria('');
@@ -38,7 +38,7 @@ const Produtos: React.FC = () => {
   }, [categoria]);
 
   // Calcula os produtos filtrados diretamente na renderização
-  const produtosFiltradosPorCategoria = categoria
+  const produtosFiltradosPorCategoria = categoria !== 'a' && categoria !== ''
     ? produtos.filter((p: Produto) => p.categoria === categoria)
     : produtos;
 

@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ theme = "bordo" }) => {
       <li><Link to="/">Home</Link></li>
 
       <li className="dropdown">
-        <Link to="/produtos">Soluções ▾</Link>
+        <Link to="/produtos/a">Soluções ▾</Link>
         <ul className="dropdown-menu">
           <li><Link to="/produtos/controle-acesso">Controle de Acesso</Link></li>
           <li><Link to="/produtos/relogio-ponto">Relógio de Ponto</Link></li>
