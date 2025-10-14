@@ -13,9 +13,9 @@ type Pages = {
   "/": {
     params: {};
   };
-  "/produtos/:categoria": {
+  "/produtos/:categoria?": {
     params: {
-      "categoria": string;
+      "categoria"?: string;
     };
   };
   "/contato": {
@@ -32,7 +32,7 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/produtos/:categoria" | "/contato" | "/sobre" | "/suporte";
+    page: "/" | "/produtos/:categoria?" | "/contato" | "/sobre" | "/suporte";
   };
   "routes/Home.tsx": {
     id: "routes/Home";
@@ -40,7 +40,7 @@ type RouteFiles = {
   };
   "routes/Produtos.tsx": {
     id: "routes/Produtos";
-    page: "/produtos/:categoria";
+    page: "/produtos/:categoria?";
   };
   "routes/Contato.tsx": {
     id: "routes/Contato";
