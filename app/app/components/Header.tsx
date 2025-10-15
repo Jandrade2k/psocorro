@@ -8,7 +8,7 @@ const Header: React.FC<HeaderProps> = ({ theme = "bordo" }) => {
   return (
     <header className={`header header--${theme}`}>
       <div className="logo">
-        <img src="logo.png" alt="Logo Ponto Socorro" />
+        <img src="assets/logo.png" alt="Logo Ponto Socorro" />
       </div>
       <div className="menu">
         <nav>

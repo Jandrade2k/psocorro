@@ -35,12 +35,12 @@
     background-size: 18px;
 
     &:hover {
-      border-color: darken($bordo, 10%);
+      border-color: $bordo;
     }
 
     &:focus {
       border-color: $bordo;
-      box-shadow: 0 0 0 3px darken($bordo, 20%);
+      box-shadow: 0 0 0 3px $bordo;
     }
   }
 }
@@ -54,7 +54,7 @@
     background-image: url("/assets/icons/arrow-down-dark.svg");
 
     &:hover {
-      border-color: darken($cinza-claro, 10%);
+      border-color: $cinza-claro;
     }
 
     &:focus {

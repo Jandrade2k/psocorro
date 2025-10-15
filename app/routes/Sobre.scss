@@ -1,0 +1,23 @@
+@use '../variables' as *;
+
+.image-sobre {
+    background-image: url('/assets/sobre-image.jpg');
+    background-size: cover;
+    background-position: 50% 20%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
+    font-weight: bold;
+    filter: brightness(0.6); // escurece a imagem
+    opacity: 0.6;            // deixa ligeiramente transparente
+    transition: all 0.3s ease;
+
+  &:hover {
+    filter: brightness(1); // clareia no hover
+    transform: scale(1.02); // zoom suave no card inteiro
+  }
+}
